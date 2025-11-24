@@ -6,7 +6,7 @@ use std::{
     thread,
 };
 
-use grand_slam::{
+use plume_core::{
     AnisetteConfiguration, CertificateIdentity, auth::Account, developer::DeveloperSession
 };
 
@@ -14,7 +14,7 @@ use idevice::{
     usbmuxd::{UsbmuxdConnection, UsbmuxdListenEvent},
 };
 
-use utils::{Device, Package, PlistInfoTrait, Signer, SignerMode, get_device_for_id};
+use plume_utils::{Device, Package, PlistInfoTrait, Signer, SignerMode, get_device_for_id};
 
 use wxdragon::prelude::*;
 use futures::StreamExt;

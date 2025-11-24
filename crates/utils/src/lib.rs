@@ -29,12 +29,12 @@ pub enum Error {
     Io(#[from] std::io::Error),
     #[error("Plist error: {0}")]
     Plist(#[from] plist::Error),
-    #[error("GrandSlam error: {0}")]
-    GrandSlam(#[from] grand_slam::Error),
+    #[error("Core error: {0}")]
+    Core(#[from] plume_core::Error),
     #[error("Idevice error: {0}")]
     Idevice(#[from] idevice::IdeviceError),
     #[error("Codesign error: {0}")]
-    Codesign(#[from] grand_slam::AppleCodesignError),
+    Codesign(#[from] plume_core::AppleCodesignError),
     #[error("Other error: {0}")]
     Other(String),
 }

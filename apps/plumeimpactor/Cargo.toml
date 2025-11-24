@@ -14,8 +14,8 @@ thiserror.workspace = true
 uuid.workspace = true
 plist.workspace = true
 futures.workspace = true
-grand_slam = { path = "../../crates/grand_slam", features = ["vendored-botan"] }
-utils = { path = "../../crates/utils" }
+plume_core = { path = "../../crates/core", features = ["vendored-botan"] }
+plume_utils = { path = "../../crates/utils" }
 
 wxdragon = "0.9.2"
 rustls = { version = "0.23.32", features = ["ring"] }

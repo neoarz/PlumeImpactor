@@ -3,7 +3,7 @@ use futures::future::try_join_all;
 use plist::Value;
 use std::sync::Arc;
 
-use grand_slam::{
+use plume_core::{
     CertificateIdentity,
     MobileProvision,
     SettingsScope,
@@ -167,7 +167,7 @@ impl Signer {
                     .ok_or_else(|| Error::Other("Failed to get bundle executable name.".into()))?;
                 let bundle_executable_path = sub_bundle.bundle_dir().join(&bundle_executable_name);
 
-                let macho = grand_slam::MachO::new(&bundle_executable_path)?;
+                let macho = plume_core::MachO::new(&bundle_executable_path)?;
 
                 let id = sub_bundle.get_bundle_identifier()
                     .ok_or_else(|| Error::Other("Failed to get bundle identifier.".into()))?;

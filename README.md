@@ -28,7 +28,7 @@ The project is seperated in multiple modules, all serve single or multiple uses 
 | `apps/plumeimpactor` | GUI interface for the crates shown below, backend using wxWidgets (with a rust ffi wrapper, wxDragon).                        |
 | `apps/plumesign`     | Simple CLI interface for signing, using `clap`.                                                                               |
 | `apps/udid`          | libMobileGestalt.dylib wrapper for obtaining Macs udid.                                                                       |
-| `crates/grand_slam`  | Handles all api request used for communicating with Apple developer services, along with providing auth for Apple's grandslam |
+| `crates/core`.       | Handles all api request used for communicating with Apple developer services, along with providing auth for Apple's grandslam |
 | `crates/utils`       | Shared code between GUI and CLI, contains signing and modification logic, and helpers.                                        |
 
 ## Building

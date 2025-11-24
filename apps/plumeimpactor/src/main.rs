@@ -30,10 +30,10 @@ pub enum Error {
     Plist(#[from] plist::Error),
     #[error("Idevice error: {0}")]
     Idevice(#[from] idevice::IdeviceError),
-    #[error("GrandSlam error: {0}")]
-    GrandSlam(#[from] grand_slam::Error),
+    #[error("Core error: {0}")]
+    Core(#[from] plume_core::Error),
     #[error("Utils error: {0}")]
-    Utils(#[from] utils::Error),
+    Utils(#[from] plume_utils::Error),
 }
 
 pub fn get_data_path() -> PathBuf {

@@ -2,7 +2,6 @@ use std::{
     fs, 
     path::PathBuf
 };
-use grand_slam::MachO;
 use plist::Value;
 use super::PlistInfoTrait;
 use crate::Error;

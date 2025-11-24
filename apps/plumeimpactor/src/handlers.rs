@@ -4,8 +4,8 @@ use tokio::sync::{
     mpsc::error::TryRecvError
 };
 use std::sync::mpsc as std_mpsc;
-use grand_slam::auth::Account;
-use utils::{
+use plume_core::auth::Account;
+use plume_utils::{
     SignerOptions, 
     Package, 
     Device
